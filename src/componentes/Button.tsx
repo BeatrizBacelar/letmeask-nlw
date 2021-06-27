@@ -1,0 +1,21 @@
+import { useState } from "react";
+
+export function Button () {
+    //let counter = 0;
+    let [counter, setCounter] = useState(0)
+
+    function increment(){
+        setCounter(counter+1);
+        counter +=1;
+        console.log(counter);
+    }
+
+
+
+    return (
+        <button onClick={increment}>
+            {counter}
+        </button>
+    )
+}
+
